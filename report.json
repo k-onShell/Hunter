@@ -1,0 +1,52 @@
+{
+  "tool": "hunter",
+  "version": "1.0.0",
+  "generated_at": "2026-10-19T00:35:39.453921+00:00",
+  "total_findings": 4,
+  "findings": [
+    {
+      "rule_id": "stripe-live-secret",
+      "description": "Stripe Live Secret Key",
+      "severity": "critical",
+      "category": "Payment & SaaS Tokens",
+      "matched_value": "sk_li***********************567890",
+      "source": "C:\\Users\\Arch\\Documents\\hunter\\sample.js",
+      "line_number": 4,
+      "entropy": 4.3815804883091625,
+      "confidence": "high"
+    },
+    {
+      "rule_id": "aws-access-key",
+      "description": "AWS Access Key ID",
+      "severity": "critical",
+      "category": "Cloud Provider Keys",
+      "matched_value": "AKI*************MPLE",
+      "source": "C:\\Users\\Arch\\Documents\\hunter\\sample.js",
+      "line_number": 3,
+      "entropy": 3.684183719779189,
+      "confidence": "medium"
+    },
+    {
+      "rule_id": "jwt-token",
+      "description": "JSON Web Token (JWT)",
+      "severity": "high",
+      "category": "Authentication Tokens",
+      "matched_value": "eyJhbGciOiJIUzI1NiIsInR5cCI*****************************************************************************************************T4fwpMeJf36POk6yJV_adQssw5c",
+      "source": "C:\\Users\\Arch\\Documents\\hunter\\sample.js",
+      "line_number": 6,
+      "entropy": 5.444070531936349,
+      "confidence": "high"
+    },
+    {
+      "rule_id": "rest-absolute-url",
+      "description": "Absolute REST API URL",
+      "severity": "low",
+      "category": "API Endpoints & Routes",
+      "matched_value": "https:************************/users",
+      "source": "C:\\Users\\Arch\\Documents\\hunter\\sample.js",
+      "line_number": 5,
+      "entropy": 4.0067499186387785,
+      "confidence": "medium"
+    }
+  ]
+}
